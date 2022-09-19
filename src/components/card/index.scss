@@ -1,0 +1,40 @@
+.card-comp{
+
+    width: 100%;
+    height: 100vh;
+    
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+
+    background-color: rgba(0, 0, 0, 0.626);
+
+    .card-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            cursor: pointer;
+            animation: increaseSize 1s forwards;    
+        
+        }
+        
+        @keyframes increaseSize {
+            0%{
+                width: 0%;
+                transform: rotate(280deg);
+            }
+
+            100%{
+                width: 22%;
+                transform: rotate(0deg);
+            }
+        }
+
+    }
+}

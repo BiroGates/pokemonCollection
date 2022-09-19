@@ -1,0 +1,107 @@
+.page-home{
+    width: 100%;
+    min-height:100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2B2E4A;
+
+    .title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .info{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            
+            padding: 50px 0px;
+
+            color: #ffffff;
+            font-family: 'poppins-SemiBold';
+            font-size: 2em;
+        }
+        .img{
+            margin-right: 50px;
+        }
+
+    }
+    .nav-bar{
+        width: 80%;
+        
+        display: flex;
+        justify-content: space-evenly;
+
+        padding: 5px 0px;
+
+        font-size: 1.1em;
+        font-family: 'poppins-SemiBold';
+        color: #ffffff;
+
+        background-color: #E84545;
+        
+        border-radius: 50px;
+    }
+
+    .expansion{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 30px;
+        padding: 50px 0px;
+
+        span{
+            color: white;
+            font-family: 'poppins-SemiBold';
+            padding: 15px 0px 0px 0px;
+        }
+    }
+
+    .pokeball{
+        width: 40%;
+        
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+    
+        padding: 50px 0px;
+
+        border-bottom: 3px solid#E84545;
+
+        img{
+            animation: giggle 1s ease-in-out  backwards infinite alternate;
+        
+            cursor: pointer;
+        }
+
+        @keyframes giggle {
+            0%{
+                transform: rotate(10deg);
+            }
+
+            100%{
+                transform: rotate(-10deg);
+            }
+        }
+
+    }
+
+    .clock{
+        width: 40%;
+
+        display: flex;
+        justify-content: center;
+
+        font-family: 'poppins-SemiBold';
+        font-size: 4em;
+        color: white;
+
+        margin-top: 20px;
+    }
+
+}
