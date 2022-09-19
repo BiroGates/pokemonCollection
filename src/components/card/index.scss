@@ -20,8 +20,7 @@
         align-items: center;
         img{
             cursor: pointer;
-            animation: increaseSize 1s forwards;    
-        
+            animation: increaseSize 1s forwards;
         }
         
         @keyframes increaseSize {

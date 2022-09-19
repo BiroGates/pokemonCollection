@@ -4,6 +4,7 @@ import './index.scss';
 // Components
 import Card from '../../components/card';
 
+
 export default function Home() {
   const [currentTime, setCurrentTime] = useState(new Date());
   const [cardReveal, setCardReveal] = useState();
@@ -14,7 +15,7 @@ export default function Home() {
       getTimeNow();
     }, 1000);
     return () => clearInterval(interval);
-  });
+  },[]);
   return (
     <main className='page-home'>
       {cardReveal &&
