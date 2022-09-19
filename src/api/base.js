@@ -8,7 +8,8 @@ const api = axios.create({
 })
 
 export default async function getCard(number) {
-    const resp = await api.get('/xy1-1');
+    console.log(number);
+    const resp = await api.get(`/xy1-${number}`);
     console.log(resp);
     return resp.data.data;
     
